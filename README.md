@@ -1,2 +1,18 @@
-# ATM with graphics
-This project is a simple ATM simulation built using C++ and the `graphics.h` library (WinBGIm). It features a basic GUI where users can insert a card, enter a PIN, and select a withdrawal amount using mouse interactions.  ## Features  - Card insertion screen
+# 💳 ATM Simulation in C++ (graphics.h)
+
+A simple graphical ATM simulation using C++ and `graphics.h`. Features include:
+
+- Create account with name, 4-digit PIN, and initial balance
+- Login with name and PIN
+- Withdraw and deposit money via mouse GUI
+- On-screen keypad and balance display
+- Data saved in `accounts.txt`
+
+## 🛠 Requirements
+- Turbo C++ / DOSBox  
+- Or: g++ with WinBGIm graphics setup
+
+## 🧪 Run (Modern Setup)
+```bash
+g++ main.cpp -o atm -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32
+./atm
